@@ -1,0 +1,90 @@
+CUDA_VISIBLE_DEVICES=0
+CUDA_VISIBLE_DEVICES=2
+CUDA_VISIBLE_DEVICES=1
+CUDA_VISIBLE_DEVICES=3
+CUDA_VISIBLE_DEVICES=0
+CUDA_VISIBLE_DEVICES=1
+CUDA_VISIBLE_DEVICES=2
+I am 16 of 32: 0 on x3111c0s25b0n0
+CUDA_VISIBLE_DEVICES=3
+I am 19 of 32: 3 on x3111c0s25b0n0
+I am 17 of 32: 1 on x3111c0s25b0n0
+I am 18 of 32: 2 on x3111c0s25b0n0
+I am 0 of 32: 0 on x3111c0s13b0n0
+CUDA_VISIBLE_DEVICES=1
+I am 1 of 32: 1 on x3111c0s13b0n0
+CUDA_VISIBLE_DEVICES=0
+CUDA_VISIBLE_DEVICES=2
+CUDA_VISIBLE_DEVICES=3
+CUDA_VISIBLE_DEVICES=0
+I am 2 of 32: 2 on x3111c0s13b0n0
+I am 3 of 32: 3 on x3111c0s13b0n0
+CUDA_VISIBLE_DEVICES=1
+CUDA_VISIBLE_DEVICES=2
+CUDA_VISIBLE_DEVICES=3
+CUDA_VISIBLE_DEVICES=0
+I am 24 of 32: 0 on x3111c0s31b0n0
+I am 5 of 32: 1 on x3111c0s13b1n0
+CUDA_VISIBLE_DEVICES=1
+CUDA_VISIBLE_DEVICES=2
+I am 4 of 32: 0 on x3111c0s13b1n0
+I am 6 of 32: 2 on x3111c0s13b1n0
+I am 7 of 32: 3 on x3111c0s13b1n0
+CUDA_VISIBLE_DEVICES=3
+I am 25 of 32: 1 on x3111c0s31b0n0
+I am 26 of 32: 2 on x3111c0s31b0n0
+I am 27 of 32: 3 on x3111c0s31b0n0
+I am 20 of 32: 0 on x3111c0s25b1n0
+CUDA_VISIBLE_DEVICES=0
+I am 22 of 32: 2 on x3111c0s25b1n0
+CUDA_VISIBLE_DEVICES=2
+I am 21 of 32: 1 on x3111c0s25b1n0
+I am 23 of 32: 3 on x3111c0s25b1n0
+CUDA_VISIBLE_DEVICES=1
+CUDA_VISIBLE_DEVICES=3
+CUDA_VISIBLE_DEVICES=0
+CUDA_VISIBLE_DEVICES=2
+CUDA_VISIBLE_DEVICES=1
+CUDA_VISIBLE_DEVICES=3
+CUDA_VISIBLE_DEVICES=0
+I am 28 of 32: 0 on x3111c0s31b1n0
+CUDA_VISIBLE_DEVICES=1
+CUDA_VISIBLE_DEVICES=2
+I am 30 of 32: 2 on x3111c0s31b1n0
+CUDA_VISIBLE_DEVICES=3
+I am 29 of 32: 1 on x3111c0s31b1n0
+I am 31 of 32: 3 on x3111c0s31b1n0
+I am 12 of 32: 0 on x3111c0s1b1n0
+I am 14 of 32: 2 on x3111c0s1b1n0
+I am 13 of 32: 1 on x3111c0s1b1n0
+I am 15 of 32: 3 on x3111c0s1b1n0
+I am 8 of 32: 0 on x3111c0s1b0n0
+I am 9 of 32: 1 on x3111c0s1b0n0
+I am 10 of 32: 2 on x3111c0s1b0n0
+I am 11 of 32: 3 on x3111c0s1b0n0
+
+# OSU MPI Allgather Latency Test v5.3
+# Size       Avg Latency(us)
+4                      10.27
+8                      10.41
+16                     11.69
+32                     13.32
+64                     13.80
+128                    14.08
+256                    14.41
+512                    15.50
+1024                   17.50
+2048                   23.58
+4096                   37.30
+8192                   56.72
+16384                  90.54
+32768                 161.84
+65536                 305.52
+131072                591.53
+262144               1128.28
+524288               2195.51
+1048576              4410.25
+2097152             14034.46
+4194304             27624.71
+8388608             56130.67
+16777216           109982.75
