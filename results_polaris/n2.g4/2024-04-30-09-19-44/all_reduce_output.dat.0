@@ -1,0 +1,47 @@
+CUDA_VISIBLE_DEVICES=0
+CUDA_VISIBLE_DEVICES=2
+CUDA_VISIBLE_DEVICES=1
+CUDA_VISIBLE_DEVICES=3
+I am 0 of 8: 0 on x3006c0s1b0n0
+I am 2 of 8: 2 on x3006c0s1b0n0
+I am 3 of 8: 3 on x3006c0s1b0n0
+I am 1 of 8: 1 on x3006c0s1b0n0
+CUDA_VISIBLE_DEVICES=0
+CUDA_VISIBLE_DEVICES=2
+CUDA_VISIBLE_DEVICES=1
+CUDA_VISIBLE_DEVICES=3
+I am 4 of 8: 0 on x3006c0s1b1n0
+I am 6 of 8: 2 on x3006c0s1b1n0
+I am 5 of 8: 1 on x3006c0s1b1n0
+I am 7 of 8: 3 on x3006c0s1b1n0
+
+# OSU MPI Allreduce Latency Test v5.3
+# Size       Avg Latency(us)
+4                       4.15
+8                       4.18
+16                      4.16
+32                      4.17
+64                      4.22
+128                     4.56
+256                     5.83
+512                     6.99
+1024                    7.76
+2048                    8.86
+4096                   15.21
+8192                   17.18
+16384                  27.33
+32768                  42.70
+65536                  59.93
+131072                 91.67
+262144                160.33
+524288                277.47
+1048576               524.58
+2097152               949.59
+4194304              1904.04
+8388608              3834.58
+16777216             7748.40
+33554432            16815.84
+67108864            35985.54
+134217728           73212.20
+268435456          153896.86
+536870912          307925.54

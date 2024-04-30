@@ -1,0 +1,102 @@
+mpiexec: unrecognized option '-N'
+Usage: mpiexec [global_options] [command_options] cmd1
+    [: [command_options] cmd2 [: ...] ]
+
+GLOBAL OPTIONS
+
+:                     Multiple Program Multiple Data separator
+--hosts               Comma-separated list of node hostnames
+--hostfile            File containing list of node hostnames
+--configfile          File containing list of MPMD commands
+--env                 Set an environment var (VAR=VAL format)
+--envlist             Comma-separated list of environment vars to export
+--envall              Export all environment vars
+--envnone             Export no environment vars
+--genv                Set an environment var for all MPMD
+--genvlist            Environment vars to export for all MPMD
+--genvall             Export all environment vars for all MPMD (default)
+--genvnone            Export no environment vars for all MPMD
+--transfer            Transfer executables (default)
+--no-transfer         Don't transfer executables
+--cpu-bind            Bind ranks to CPUs (deprecated)
+--mem-bind            Bind ranks to NUMA nodes (deprecated)
+--depth               CPUs per rank
+--label               Add node and rank labels output
+--no-label            Don't add labels to output (default)
+--include-tasks       List of ATOM tasks to run
+--exclude-tasks       List of ATOM tasks to skip
+--exclusive           Require exclusive node access
+--shared              Shared node access
+--line-buffer         Line buffered mode for stdio
+--no-line-buffer      Fully buffered stdio (default)
+--abort-on-failure    Abort on rank failure (default)
+--no-abort-on-failure Continue running on rank failure
+--pmi                 PMI type (cray, pmix, none)
+--cpu-governor        CPU performance scaling governor
+--cpu-freq            CPU performance scaling frequency
+--rankfile            File containing the per-rank pinning info
+--restart             Restart if a failure is detected
+--rlimits             Comma-separated list of rlimits to export
+--single-node-vni     Allocate a Slingshot VNI even if single-host
+--no-vni              Skip Slingshot VNI allocation
+--vni-pools           List the pools to get Slingshot VNIs from
+--daos                Enable the DAOS filesystem
+--disable-rdzv-get    Disable rendezvous gets in the NICs
+--spindle             Enable Spindle
+--sstartup            Enable Scalable Start Up
+--no-sstartup         Disable Scalable Start Up
+--traffic-classes     Network QoS (low_latency, bulk_data, etc)
+--job-aware           Enable spawning and parallel job-steps
+--universe-size       Maximum number of possible ranks
+--network             Configuration parameters for the NICs
+-v, --verbose         More verbose output
+-q, --quiet           Less verbose output
+-V, --version         Print version and exit
+-h, --help            Print this message and exit
+
+COMMAND OPTIONS
+
+-n, --np              Number of ranks
+--ppn                 Ranks per node
+--umask               File creation mask
+--wdir                Working directory
+
+--cpu-bind            Bind ranks to CPUs
+--mem-bind            Bind ranks to NUMA nodes
+--gpu-bind            Control ranks' GPU visibility
+CPU BINDING
+
+The --cpu-bind option is formatted as
+[verbose,]<keyword>[:arguments]
+
+Keywords:
+
+* none - No CPU binding.
+* numa, socket, core, thread - Bind ranks to the specified hardware.
+* depth - Bind ranks to number of threads in 'depth' argument.
+* list - Bind ranks to colon-separated rangelists of CPUs.
+* mask - Bind ranks to comma-separated bitmasks of CPUs.
+
+MEMORY (NUMA NODE) BINDING
+
+The --mem-bind option is formatted as
+[verbose,]<keyword>[:arguments]
+
+Keywords:
+* none - No memory binding.
+* local - Restrict each rank to use only its own NUMA node memory.
+* list - Bind ranks to colon-separated rangelists of NUMA nodes.
+* mask - Bind ranks to comma-separated bitmasks of NUMA nodes.
+
+GPU VISIBILITY
+
+The --gpu-bind option is formatted as
+[verbose,]<keyword>[:arguments]
+
+Keywords:
+
+* none - Ranks can see all GPUs
+* per_task:<gpus_per_rank> - Each rank sees <gpus_per_rank> GPUs
+* single:<ranks_per_gpu> - Blocks of <ranks_per_gpu> see each GPU
+* list:<list> - Set visibility with colon-separated rangelists
+
