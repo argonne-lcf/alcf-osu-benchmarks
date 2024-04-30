@@ -14,5 +14,6 @@ if [ -z "${RANK}" ]; then
     export LOCAL_RANK=0
 fi
 echo CUDA_VISIBLE_DEVICES=$LOCAL_RANK
+export CUDA_VISIBLE_DEVICES=$LOCAL_RANK
 echo "I am $RANK of $SIZE: $LOCAL_RANK on `hostname`"
 $@
